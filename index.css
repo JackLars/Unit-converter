@@ -1,0 +1,190 @@
+body {
+    background-color: #1C1C1C;
+    font-family: 'Inter', serif;
+    color: #FFFFFF;
+}
+
+/* Main container */
+
+.container {
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+    width: 550px;
+    min-height: 700px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    box-sizing: content-box;
+}
+
+/* Description of main container */
+
+.description {
+    padding-top: 30px;
+    min-height: 285px;
+    background-color: #6943FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.description h1{
+    margin: 30px 50px;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.description input {
+    display: block;
+    width: 120px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    font-size: 58px;
+    border-radius: 5px;
+    border-color: 2px solid #B295FF;
+    background-color: #6943FF;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 115px;
+    padding: 10px 27px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D3D3D;
+    border-radius: 5px;
+}
+
+/* Toggle switch position */
+
+.theme-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFFFFF;
+}
+
+.theme-switch > span {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* Conversion section */
+
+  .conversion {
+    padding-bottom: 25px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .conversion-unit {
+    width: 500px;
+    min-height: 105px;
+    margin: auto;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+
+  .conversion h2 {
+    padding-top: 30px;
+    padding-left: 75px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #5A537B;
+  }
+
+  .conversion p {
+    margin-left: 75px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+  }
+
+  /* Dark theme design */
+
+  .dark-theme .conversion {
+    background-color: #1F2937;
+    border-top: 1px solid #FFFFFF;
+  }
+
+  .dark-theme .conversion-unit {
+    background-color: #273549;
+  }
+
+  .dark-theme .conversion-unit h2 {
+    color: #CCC1FF;
+  }
+
+  .dark-theme .conversion-unit p {
+    color: #FFFFFF;
+  }
